@@ -1,0 +1,9 @@
+{
+  "extensionId": {
+    "name": "DRPC",
+    "path": "extensions/DRPC/DRPC.yy"
+  },
+  "resourceVersion": "1.0",
+  "resourceType": "GMExtensionConfigSet",
+  "configurables": null
+}
