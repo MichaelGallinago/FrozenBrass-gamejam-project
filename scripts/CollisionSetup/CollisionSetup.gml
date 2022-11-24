@@ -6,6 +6,9 @@ function CollisionSetup()
 		case Stage_TSZ:
 			tile_data_set("", TileCount, "CollisionLayerA", "CollisionLayerB");
 		break;
+		case Stage_Gamejam:
+			tile_data_set("", TileCount, "CollisionLayerA", "CollisionLayerB");
+		break;
 		default:
 			tile_data_set(noone, "", "", "");
 	}

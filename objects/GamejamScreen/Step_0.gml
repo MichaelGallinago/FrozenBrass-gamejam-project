@@ -4,7 +4,6 @@
 	var CentreX = global.Width / 2;
 	var CentreY = global.Height / 2;
 	
-		
 	if (RoomTimer < 560 && RoomTimer % 10) instance_create(CentreX, CentreY, GamejamSphere);
 	
 	if RoomTimer < 560
