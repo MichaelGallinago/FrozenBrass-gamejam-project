@@ -68,7 +68,7 @@ function PlayerStartup()
 	Grv			     = 0.21875;
 	AirTimer	     = 1800;
 	CollisionMode    = [0, 0];
-	Facing			 = FlipRight;
+	Facing			 = FlipLeft;
 	DoubleSpinAttack = SpinReady;
 	DropdashFlag     = DashLocked;
 	DrawOrder		 = depth;

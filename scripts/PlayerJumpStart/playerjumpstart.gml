@@ -46,10 +46,11 @@ function PlayerJumpStart()
 	OnObject	  = false;
 	StickToConvex = false;
 	Jumping       = true;
-	Animation     = AnimSpin;
+	Animation     = AnimJump;
 	RadiusX		  = DefaultRadiusX;
 	RadiusY		  = DefaultRadiusY;
 
+	/*
 	if !Spinning
 	{	
 		PosY    += DefaultRadiusY - SmallRadiusY;
@@ -58,7 +59,8 @@ function PlayerJumpStart()
 		Spinning = true;
 		
 		/* Yes, originals seems to reset radiuses first and then set them once again. This
-		leads to an oversight few lines below, fixed with the global.FixRollJump flag */		
+		leads to an oversight few lines below, fixed with the global.FixRollJump flag */	
+	/*
 	}
 	else
 	{
@@ -74,6 +76,7 @@ function PlayerJumpStart()
 			RadiusY = SmallRadiusY;
 		}
 	}
+	*/
 	audio_sfx_play(sfxJump, false);
 			
 	// Return action result

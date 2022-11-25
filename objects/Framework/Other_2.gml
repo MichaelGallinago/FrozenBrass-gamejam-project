@@ -93,6 +93,7 @@
 		#macro AnimSpring		29
 		#macro AnimTransform	30
 		#macro AnimBreathe		31
+		#macro AnimJump		    32
 	
 		// Collision macro
 		#macro ColHitbox  0

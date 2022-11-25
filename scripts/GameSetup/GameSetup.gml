@@ -19,10 +19,10 @@ function GameSetup()
 	features ENTIRELY */
 	
 	// Originals differences. By defualt, the framework is in a "mix" state
-	global.SpindashEnabled    = true;
-	global.PeeloutEnabled	  = true;
+	global.SpindashEnabled    = false;
+	global.PeeloutEnabled	  = false;
 	global.DropdashEnabled    = false;
-	global.DSpinAttackEnabled = true;
+	global.DSpinAttackEnabled = false;
 	global.GroundSpeedcap	  = false;
 	global.AirSpeedcap	      = false;
 	global.RolljumpControl    = false;
@@ -36,7 +36,7 @@ function GameSetup()
 	global.SKWallCollision	  = true;
 	global.SKItemBoxBehaviour = false;
 	global.CDStageTimer	      = true;
-	global.CDCamera			  = false;
+	global.CDCamera			  = true;
 	
 	// Orbinaut improvements
 	global.SmoothRotation	    = true;

@@ -33,11 +33,13 @@ function PlayerAnimate()
 		{
 			case AnimIdle:
 			{
-				animation_play(spr_sonic_idle, [288, 24, 48, 24, 24], 3);
+				animation_play(spr_sonic_idle, 24, 3);
 			}
 			break;
 			case AnimMove:	
 			{
+				animation_play(spr_sonic_walk, floor(max(1, 9 - abs(Gsp))), 0);
+				/*
 				if abs(Gsp) < 6
 				{
 					animation_play(spr_sonic_walk, floor(max(1, 9 - abs(Gsp))), 0);
@@ -54,6 +56,7 @@ function PlayerAnimate()
 					}
 					animation_play(Sprite, floor(max(1, 9 - abs(Gsp))), 0);
 				}
+				*/
 			}
 			break;
 			case AnimPeelout:
@@ -157,6 +160,20 @@ function PlayerAnimate()
 			break;
 			case AnimDropdash:
 				animation_play(spr_sonic_dropdash, 1, 0);
+			break;
+			case AnimJump:
+				if Ysp < 0
+				{
+					animation_set(spr_sonic_jump, 0);
+				}
+				else if Ysp < 3
+				{
+					animation_set(spr_sonic_jump, 1);
+				}
+				else
+				{
+					animation_set(spr_sonic_jump, 2);
+				}
 			break;
 		}
 		#endregion

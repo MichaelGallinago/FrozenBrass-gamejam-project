@@ -5,7 +5,8 @@
 	{
 		if global.ShowSplash
 		{
-			room_goto(Screen_Splash);
+			//room_goto(Screen_Splash);
+			room_goto(Stage_Gamejam);
 		}
 		else
 		{

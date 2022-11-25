@@ -50,7 +50,7 @@
 				PlayerMovementGround();
 				PlayerBalance();
 				PlayerGroundWallCollision();	
-				PlayerRollStart();	
+				//PlayerRollStart();	
 			}
 			else
 			{

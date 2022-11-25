@@ -6,7 +6,7 @@ function PlayerPhysicsHandle()
 		// Normal physics
 		if !SuperState
 		{
-			Acc			  = 0.046875;
+			Acc			  = 0.046875 * 2;
 			GlideAcc      = 0.015625;
 			AirAcc		  = 0.09375;
 			Dec			  = 0.5;
