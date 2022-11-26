@@ -40,7 +40,14 @@ function player_damage(isFlame,isThunder,instantKill)
 			Death               = true;
 			InvincibilityFrames = 0;		
 			Animation	        = AnimDeath;
-
+			MethalHealth        = 0;
+			visible             = false;
+			for (var i = 0; i < 13; i++)
+			{
+				instance_create(x, y, PlayerParts).image_index = i;
+			}
+			audio_sfx_play(sfxExplosion, false);
+			
 			Grv   =  0.21875;
 			Ysp	  = -7;
 			Xsp	  =  0;
@@ -53,6 +60,7 @@ function player_damage(isFlame,isThunder,instantKill)
 		// Make player lose their rings or barrier
 		else
 		{	
+			MethalHealth        = max(MethalHealth - 25, 0);
 			Animation		    = AnimHurt;
 			Hurt				= true;
 			InvincibilityFrames = 120;

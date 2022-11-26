@@ -60,6 +60,7 @@
 	{	
 		if object_check_player(ColHitbox)
 		{
+			Player.MethalHealth = min(Player.MethalHealth + 1, 100);
 			Player.Rings++;
 			audio_sfx_play(sfxSpark, false);
 	

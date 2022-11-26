@@ -1,6 +1,7 @@
 /// @description Add description here
 function PlayerPat()
 {
+	if (Animation == AnimPat) MethalHealth = min(100, MethalHealth + 1);
 	if Input.Mode
 	{
 		if instance_exists(Manul)

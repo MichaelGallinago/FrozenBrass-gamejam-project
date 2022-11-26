@@ -24,7 +24,9 @@
 			Renderer,
 			Background, 
 			Audio,
-			Player
+			Player,
+			PlayerParts,
+			DeathExplosion
 		];
 		
 		var Length = array_length(IgnoreList);

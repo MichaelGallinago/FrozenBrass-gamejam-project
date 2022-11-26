@@ -252,9 +252,11 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_57448626","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"BridgeLength","path":"objects/Bridge/Bridge.yy",},"objectId":{"name":"Bridge","path":"objects/Bridge/Bridge.yy",},"value":"10",},
           ],"isDnd":false,"objectId":{"name":"Bridge","path":"objects/Bridge/Bridge.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2160.0,"y":1048.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49ADA396","properties":[],"isDnd":false,"objectId":{"name":"Manul","path":"objects/Manul/Manul.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2811.0,"y":1158.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E4120BC","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49ADA396","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Timer","path":"objects/Manul/Manul.yy",},"objectId":{"name":"Manul","path":"objects/Manul/Manul.yy",},"value":"400",},
+          ],"isDnd":false,"objectId":{"name":"Manul","path":"objects/Manul/Manul.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2811.0,"y":1158.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E4120BC","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Timer","path":"objects/Manul/Manul.yy",},"objectId":{"name":"Manul","path":"objects/Manul/Manul.yy",},"value":"0",},
           ],"isDnd":false,"objectId":{"name":"Manul","path":"objects/Manul/Manul.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2892.0,"y":1158.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1CD23BD0","properties":[],"isDnd":false,"objectId":{"name":"SpikesVertical","path":"objects/SpikesVertical/SpikesVertical.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2528.0,"y":640.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_43C7AC9E","properties":[
@@ -445,6 +447,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_16DC90C4","properties":[],"isDnd":false,"objectId":{"name":"BoundaryTrigger","path":"objects/BoundaryTrigger/BoundaryTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":9280.0,"y":1056.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_290A75FD","properties":[],"isDnd":false,"objectId":{"name":"BoundaryTrigger","path":"objects/BoundaryTrigger/BoundaryTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6783.0,"y":1216.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2326C20","properties":[],"isDnd":false,"objectId":{"name":"BoundaryTrigger","path":"objects/BoundaryTrigger/BoundaryTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5216.0,"y":1808.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_33E4B105","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"AbovePlayer","path":"objects/BrassPart/BrassPart.yy",},"objectId":{"name":"BrassPart","path":"objects/BrassPart/BrassPart.yy",},"value":"True",},
+          ],"isDnd":false,"objectId":{"name":"BrassPart","path":"objects/BrassPart/BrassPart.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":19.0,"y":1152.0,},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,
@@ -697,6 +702,7 @@
     {"name":"inst_16DC90C4","path":"rooms/Stage_Gamejam/Stage_Gamejam.yy",},
     {"name":"inst_290A75FD","path":"rooms/Stage_Gamejam/Stage_Gamejam.yy",},
     {"name":"inst_2326C20","path":"rooms/Stage_Gamejam/Stage_Gamejam.yy",},
+    {"name":"inst_33E4B105","path":"rooms/Stage_Gamejam/Stage_Gamejam.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

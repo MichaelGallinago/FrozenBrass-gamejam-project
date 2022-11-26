@@ -32,7 +32,7 @@
 		case 3:
 			if !fade_check(StateActive) && !instance_exists(Ring)
 			{
-				fade_perform(ModeInto, BlendBlack, 0.5);
+				fade_perform(ModeInto, BlendWhite, 0.5);
 			}
 		break;
 	}

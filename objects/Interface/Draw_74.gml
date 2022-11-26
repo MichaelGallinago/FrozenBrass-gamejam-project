@@ -173,9 +173,12 @@
 			}
 			draw_set_halign(fa_right);
 	
-			draw_text(X + 89, Y + 41, Player.Rings);
-
-			// Draw LIVES
+			draw_text(X + 100, Y + 41, Player.Rings);
+			
+			draw_sprite(gui_hud_mental_health, 0, X + global.Width / 2, Y + global.Height - 16);
+			draw_sprite(gui_hud_healthbar, 0, X + global.Width / 2, Y + global.Height - 4);
+			draw_sprite_ext(gui_hud_health, 0, X + global.Width / 2 - 50, Y + global.Height - 5, Player.MethalHealth, 1, 0, c_white, 1);
+			// Drawz LIVES
 			//draw_set_font(Font.FontDigits2);
 			//draw_text(X + 65, Y + global.Height - 15, Player.Lives);
 	

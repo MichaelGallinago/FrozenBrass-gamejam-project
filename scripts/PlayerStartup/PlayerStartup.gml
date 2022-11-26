@@ -61,6 +61,7 @@ function PlayerStartup()
 	HitboxData			= [];
 	
 	// Set defaults
+	MethalHealth     = 100;
 	AllowCollision   = true;
 	AllowMovement    = true;
 	DropdashRev      = -1;

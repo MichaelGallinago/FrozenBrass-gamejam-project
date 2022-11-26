@@ -90,6 +90,7 @@
 		if State
 		{
 			Stage.TargetRightBoundary = x + global.Width / 2;
+			Stage.TargetLeftBoundary  = 0;
 		}
 		else
 		{
