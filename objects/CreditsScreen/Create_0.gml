@@ -5,7 +5,7 @@
 	draw_set_font(Font.FontDefault);
 	draw_set_halign(fa_center);
 	audio_bgm_play(AudioPrimary, MenuTheme);
-	fade_perform(ModeFrom, BlendWhite, 1);
+	fade_perform(ModeFrom, BlendWhite, 0.25);
 	
 	Text = [
 		"TEAM LEADER - MICHAEL GALLINAGO",
@@ -21,6 +21,7 @@
 		"CHARACTER: HAMSTER MAN",
 		"MANUL: HAMSTER MAN",
 		"BOSS: HAMSTER MAN",
+		"STAGE: HAMSTER MAN AND LAPPER",
 		"SONIC TEAM AND SEGA",
 		"",
 		"*SOUNDS*",
@@ -32,7 +33,6 @@
 		"MENU THEME - PARHELION SECRET BY: MR LANGE",
 		"STAGE THEME - SCORCHING SUBZERO BY: FALK, DJ MAX-E",
 		"BOSS THEME - THE RECKLESS ONE BY: DJ MAX-E",
-		"",
 		"",
 		"",
 		"",

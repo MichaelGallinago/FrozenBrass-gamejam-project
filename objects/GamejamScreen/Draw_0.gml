@@ -12,5 +12,4 @@
 		draw_text(CentreX, CentreY - 12, "THAT SHOULD NOT BE SOLD");
 		draw_text(CentreX, CentreY + 4,  "ALL RIGHTS TO THE CHARACTER");
 		draw_text(CentreX, CentreY + 14, "BELONG TO HAMSTER MAN");
-		draw_text(CentreX, CentreY + 30, "ALL RIGHTS TO SOUNDS AND MUSIC BELONG TO SEGA");
 	}
