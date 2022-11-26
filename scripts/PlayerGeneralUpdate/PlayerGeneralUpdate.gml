@@ -45,7 +45,7 @@ function PlayerGeneralUpdate()
 		Lives			+= 1;
 		LivesRewards[0] += 100;
 							
-		audio_bgm_play(AudioSecondary, ExtraLife);
+		//audio_bgm_play(AudioSecondary, ExtraLife);
 	}
 	
 	// Grant extra life for exceeding 50000 points
@@ -54,6 +54,6 @@ function PlayerGeneralUpdate()
 		Lives		    += 1;
 		LivesRewards[1] += 50000;
 		
-		audio_bgm_play(AudioSecondary, ExtraLife);
+		//audio_bgm_play(AudioSecondary, ExtraLife);
 	}
 }

@@ -49,7 +49,8 @@
 						}
 						else
 						{
-							audio_sfx_play(sfxFail, false);
+							fade_perform(ModeInto, BlendBlack, 1);
+							audio_sfx_play(sfxPauseSelect, false);
 						}
 					}
 					break;
@@ -169,16 +170,16 @@
 			else
 			{
 				draw_sprite(gui_hud_rings, 0, X + 36, Y + 46);
-			}	
+			}
 			draw_set_halign(fa_right);
 	
 			draw_text(X + 89, Y + 41, Player.Rings);
 
 			// Draw LIVES
-			draw_set_font(Font.FontDigits2);
-			draw_text(X + 65, Y + global.Height - 15, Player.Lives);
+			//draw_set_font(Font.FontDigits2);
+			//draw_text(X + 65, Y + global.Height - 15, Player.Lives);
 	
-			draw_sprite(gui_hud_lives, global.Character, X + 40, Y + global.Height - 16);
+			//draw_sprite(gui_hud_lives, global.Character, X + 40, Y + global.Height - 16);
 		}
 	}
 	#endregion
@@ -390,7 +391,7 @@
 			{
 				case CharSonic:
 				{
-					var Char = "SONIC____GOT";
+					var Char = "ROBOT____GOT";
 					var Icon = gui_icon_sonic;
 				}
 				break;

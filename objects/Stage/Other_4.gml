@@ -7,3 +7,6 @@
 		show_message("NO PLAYER OBJECT FOUND! \nPlease, add a player to the stage in order to play it");
 		room_goto(Screen_DevMenu);
 	}
+	
+	global.Lives = 2;
+	Player.Lives = 2;

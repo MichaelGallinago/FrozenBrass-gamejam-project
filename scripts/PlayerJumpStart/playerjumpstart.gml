@@ -77,7 +77,7 @@ function PlayerJumpStart()
 		}
 	}
 	*/
-	audio_sfx_play(sfxJump, false);
+	audio_sfx_play(sfxLand, false);
 			
 	// Return action result
 	return Jumping;

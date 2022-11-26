@@ -8,7 +8,7 @@
 	PosX	  = x;
 	PosY	  = y;
 	CardX	  = x;
-	CardY	  = y - 3;
+	CardY	  = y + 1;
 	Timer     = 5;
 	CardSpeed = 3;
 	IsFalling = 0;

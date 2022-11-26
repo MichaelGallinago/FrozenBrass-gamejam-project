@@ -30,16 +30,16 @@ function StageSetup()
 		// Template
 		default:
 		{
-			ZoneName	     = "TEMPLATE";
+			ZoneName	     = "SNOW SHOW";
 			ActID		     = 0;
 			WaterLevel	     = 0;
 			WaterEnabled     = false;
-			StageMusic       = noone;
+			StageMusic       = SnowShow;
 			AnimatedGraphics = noone;		// Array: [sprite1, sprite1 duration, sprite2, sprite2 duration...]	
 			AnimalSet	     = noone;		// Array: [animalsprite1, animalsprite2...]
 			BottomBoundary	 = room_height;
 			
-			NextStage	 = Screen_DevMenu;
+			NextStage	 = Screen_Menu;
 			SaveProgress = false;
 			IsFinalStage = false;				
 		}

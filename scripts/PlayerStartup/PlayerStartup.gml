@@ -1,6 +1,7 @@
 function PlayerStartup()
 {		
 	// Initialise variables
+	LazerReload         = 0;
 	PosX				= 0;
 	PosY				= 0;
 	Acc					= 0;
@@ -90,8 +91,8 @@ function PlayerStartup()
 	// Set collision radiuses
 	if global.Character != CharTails
 	{
-		DefaultRadiusY = 19;
-		DefaultRadiusX = 9;
+		DefaultRadiusY = 14;
+		DefaultRadiusX = 7;
 		SmallRadiusY   = 14;
 		SmallRadiusX   = 7;
 	}

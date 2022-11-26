@@ -69,7 +69,7 @@
 						if global.Score mod 50000 == 0
 						{
 							global.Lives++;
-							audio_bgm_play(AudioSecondary, ExtraLife);
+							//audio_bgm_play(AudioSecondary, ExtraLife);
 						}
 					}
 					else if global.Emeralds != 7

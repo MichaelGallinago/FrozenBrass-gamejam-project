@@ -1,12 +1,12 @@
 /// @description Main
 // You can write your code in this editor
-
-	// Set right boundary if object is active
-	Stage.TargetRightBoundary = x + max(global.Width / 2, ArenaWidth / 2);
+	
+	// Set left boundary if object is active
+	Stage.TargetLeftBoundary = x - max(global.Width / 2, ArenaWidth / 2);
 	
 	if Stage.IsBossfight == -1
 	{
-		if floor(Player.PosX) > x
+		if floor(Player.PosX) < x
 		{
 			// Set new top boundary
 			if ArenaHeight != -1
@@ -14,7 +14,7 @@
 				Stage.TargetTopBoundary = Stage.BottomBoundary - ArenaHeight;
 			}
 			
-			audio_bgm_play(AudioPrimary, BossTheme); 
+			audio_bgm_play(AudioPrimary, SnowShowBoss); 
 
 			/* SPAWN YOUR BOSS HERE. Do not forget to set BossTrigger.BossDefeated to
 			'true' once you want your stage to exit boss state! */
@@ -29,8 +29,8 @@
 	{
 		if !BossDefeated
 		{
-			// Set left boundary
-			Stage.TargetLeftBoundary = x - max(global.Width / 2, ArenaWidth / 2);	
+			// Set right boundary
+			Stage.TargetRightBoundary = x + max(global.Width / 2, ArenaWidth / 2);
 			
 			// Check for a key to be pressed if it is example bossfight
 			if Template and keyboard_check_pressed(ord("K"))
@@ -43,8 +43,8 @@
 		{
 			/* Set right boundary. Normally, you have to place Egg Prison or Clear Panel
 			after the arena, so the game will automatically set new boundaries once again */
-			Stage.TargetRightBoundary = room_width;
-			Stage.IsBossfight         = false;
+			Stage.TargetLeftBoundary = 0;
+			Stage.IsBossfight        = false;
 			
 			// Increase water level for test stage
 			if room == Stage_TSZ

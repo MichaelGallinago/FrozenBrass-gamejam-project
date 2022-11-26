@@ -22,6 +22,7 @@
 				PlayerSonicDropdash();
 				PlayerTailsFlight();
 				PlayerAirLevelCollision();
+				PlayerSpawnLazer();
 			}
 			else
 			{
@@ -46,6 +47,8 @@
 				if PlayerSpindash()  return;
 				if PlayerPeelout()   return;
 				if PlayerJumpStart() return;
+				if PlayerPat()       return;
+				PlayerSpawnLazer();
 				PlayerSlopeResist();
 				PlayerMovementGround();
 				PlayerBalance();

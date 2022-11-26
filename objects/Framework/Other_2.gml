@@ -94,6 +94,7 @@
 		#macro AnimTransform	30
 		#macro AnimBreathe		31
 		#macro AnimJump		    32
+		#macro AnimPat		    33
 	
 		// Collision macro
 		#macro ColHitbox  0

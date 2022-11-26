@@ -61,7 +61,7 @@
 		if object_check_player(ColHitbox)
 		{
 			Player.Rings++;
-			audio_sfx_play(Player.Rings mod 2 == 0 ? sfxRingLeft : sfxRingRight, false);
+			audio_sfx_play(sfxSpark, false);
 	
 			instance_create(x, y, RingSparkle);	
 			instance_destroy();	

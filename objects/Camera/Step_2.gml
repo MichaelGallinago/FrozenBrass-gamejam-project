@@ -26,12 +26,12 @@
 			}
 	
 			// Set horizontal shift speed
-			if TargetX <= global.Width / 2 - 16 
-			{ 
+			if TargetX <= global.Width / 2 - 16
+			{
 				ShiftX = clamp(TargetX - (global.Width / 2 - 16), -MaxShiftX, 0);  
 			}
 			else if TargetX >= global.Width / 2
-			{ 
+			{
 				ShiftX = clamp(TargetX - (global.Width / 2), 0, MaxShiftX);    
 			}
 			else

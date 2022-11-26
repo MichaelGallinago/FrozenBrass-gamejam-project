@@ -19,7 +19,7 @@
 						global.Lives += 1;
 						RingTarget += 100;
 						
-						audio_bgm_play(AudioSecondary, ExtraLife);	
+						//audio_bgm_play(AudioSecondary, ExtraLife);	
 					}
 				}
 	

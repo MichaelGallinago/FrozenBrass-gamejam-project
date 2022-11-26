@@ -33,7 +33,7 @@ function PlayerAnimate()
 		{
 			case AnimIdle:
 			{
-				animation_play(spr_sonic_idle, 24, 3);
+				animation_play(spr_sonic_idle, 24, 0);
 			}
 			break;
 			case AnimMove:	
@@ -93,10 +93,12 @@ function PlayerAnimate()
 				animation_play(spr_sonic_spindash, 1, 0);
 			break;
 			case AnimCrouch:
-				animation_play(spr_sonic_crouch, 4, 1);
+				animation_play(spr_sonic_idle, 24, 0);
+				//animation_play(spr_sonic_crouch, 4, 1);
 			break;
 			case AnimLookup:
-				animation_play(spr_sonic_lookup, 4, 1);
+				animation_play(spr_sonic_idle, 24, 0);
+				//animation_play(spr_sonic_lookup, 4, 1);
 			break;
 			case AnimSkid:
 			{
@@ -106,12 +108,13 @@ function PlayerAnimate()
 				}
 				else
 				{
-					animation_play(spr_sonic_skid, 6, 2);
+					animation_play(spr_sonic_skid, 6, 0);
 				}
 			}
 			break;
 			case AnimPush:
-				animation_play(spr_sonic_push, floor(max(1, 8 - abs(Gsp)) * 4), 0);
+				animation_play(spr_sonic_idle, 24, 0);
+				//animation_play(spr_sonic_push, floor(max(1, 8 - abs(Gsp)) * 4), 0);
 			break;
 			case AnimHurt:
 				animation_set(spr_sonic_hurt, 0);
@@ -123,26 +126,34 @@ function PlayerAnimate()
 				animation_set(spr_sonic_drown, 0);
 			break;
 			case AnimBalance:
-				animation_play(spr_sonic_balance, 16, 0);
+				animation_play(spr_sonic_idle, 24, 0);
+				//animation_play(spr_sonic_balance, 16, 0);
 			break;
 			case AnimBalanceFlip:
-				animation_play(spr_sonic_balance_flip, 16, 0);
+				animation_play(spr_sonic_idle, 24, 0);
+				//animation_play(spr_sonic_balance_flip, 16, 0);
 			break;
 			case AnimBalancePanic:
-				animation_play(spr_sonic_balance_panic, 4, 0);
+				animation_play(spr_sonic_idle, 24, 0);
+				//animation_play(spr_sonic_balance_panic, 4, 0);
 			break;
 			case AnimBalanceTurn:
-				animation_set(spr_sonic_balance_turn, 0);
+				animation_play(spr_sonic_idle, 24, 0);
+				//animation_set(spr_sonic_balance_turn, 0);
 			break;
 			case AnimSpring:
 			{
-				if !(--AnimSpringTime)
+				if Ysp < 0
 				{
-					Animation = AnimMove;
+					animation_set(spr_sonic_jump, 0);
+				}
+				else if Ysp < 2
+				{
+					animation_set(spr_sonic_jump, 1);
 				}
 				else
 				{
-					animation_set(spr_sonic_spring, 0);
+					animation_set(spr_sonic_jump, 2);
 				}
 			}
 			break;
@@ -166,7 +177,7 @@ function PlayerAnimate()
 				{
 					animation_set(spr_sonic_jump, 0);
 				}
-				else if Ysp < 3
+				else if Ysp < 2
 				{
 					animation_set(spr_sonic_jump, 1);
 				}
@@ -174,6 +185,9 @@ function PlayerAnimate()
 				{
 					animation_set(spr_sonic_jump, 2);
 				}
+			break;
+			case AnimPat:
+				animation_play(spr_sonic_pat, 24, 0);
 			break;
 		}
 		#endregion

@@ -58,7 +58,7 @@
 		case 2:
 		{
 			// Check if the player passed by the right boundary
-			if floor(Player.PosX) > Stage.RightBoundary - 24
+			if floor(Player.PosX) < Stage.LeftBoundary + 24
 			{
 				if Stage.IsFinished < 2
 				{
@@ -78,22 +78,22 @@
 				}
 				else
 				{
-					Input.Right = true;
+					Input.Left = true;
 				}
 			}
 		}
 	}
 	
 	// Update stage boundaries
-	if Camera.ViewX > x - global.Width * 1.5 + 64
+	if Stage.Time > 100 && Camera.ViewX < x + global.Width * 1.5 - 64
 	{
 		if State
 		{
-			Stage.TargetLeftBoundary = x - (global.Width / 2);
+			Stage.TargetRightBoundary = x + global.Width / 2;
 		}
 		else
 		{
-			Stage.TargetLeftBoundary  = x - global.Width * 1.5 + 64;
-			Stage.TargetRightBoundary = x + global.Width / 2;
+			Stage.TargetLeftBoundary  = x - global.Width / 2;
+			Stage.TargetRightBoundary = x + global.Width * 1.5 + 64;
 		}
 	}

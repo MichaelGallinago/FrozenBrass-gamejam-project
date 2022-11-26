@@ -62,7 +62,7 @@ function player_damage(isFlame,isThunder,instantKill)
 			{		
 				if Rings > 0
 				{
-					audio_sfx_play(sfxRingLoss, false)
+					audio_sfx_play(sfxThunderBarrierJump, false);
 				}
 			
 				// Set default values we will use to spread rings
@@ -136,7 +136,7 @@ function player_damage(isFlame,isThunder,instantKill)
 	}
 	
 	// Play hurt sound
-	if !audio_sfx_is_playing(sfxRingLoss)
+	if !audio_sfx_is_playing(sfxThunderBarrierJump)
 	{
 		switch object_index
 		{

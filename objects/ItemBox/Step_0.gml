@@ -29,7 +29,22 @@
 			}
 			
 			// If so, destroy
-			if Check and (Player.Spinning or Player.GlideState > GlideFall) and Player.OnObject != id
+			if object_check_object(Lazer)
+			{
+				instance_create(PosX, PosY, DustExplosion);
+				audio_sfx_play(sfxDestroy, false);
+				
+				// Update object
+				object_set_unload(false);
+				object_set_hitbox(0, 0);
+
+				// Increment state
+				Timer  = 0;
+				State += 1;
+				
+				object_set_solidbox(0, 0, false);
+			}
+			else if Check and (Player.Spinning or Player.GlideState > GlideFall) and Player.OnObject != id
 			{
 				if object_check_player(ColHitbox2)
 				{
@@ -91,7 +106,7 @@
 			}
 			
 			CardX = x;
-			CardY = y - 3;
+			CardY = y + 1;
 		}
 		break;
 		case 1:
@@ -115,8 +130,7 @@
 			{
 				case "10 Rings":
 				{
-					audio_sfx_play(sfxRingLeft,  false);
-					audio_sfx_play(sfxRingRight, false);
+					audio_sfx_play(sfxSpark, false);
 					
 					Player.Rings += 10;		
 				}
@@ -243,7 +257,7 @@
 				case "Extra Life":
 				{
 					Player.Lives++;
-					audio_bgm_play(AudioSecondary, ExtraLife);
+					//audio_bgm_play(AudioSecondary, ExtraLife);
 				}
 				break;
 				case "Eggman":
