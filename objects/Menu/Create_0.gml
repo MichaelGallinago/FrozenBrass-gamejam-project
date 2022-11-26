@@ -2,6 +2,8 @@
 // Вы можете записать свой код в этом редакторе
 
 	RoomTimer = 0;
+	IsExitDestroyed = false;
+	Selected = 0;
 	RoomEnd = false;
 	OrangeColour = make_colour_rgb(168, 76, 20);
 	draw_set_halign(fa_center);

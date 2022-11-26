@@ -7,6 +7,7 @@ function CollisionSetup()
 			tile_data_set("", TileCount, "CollisionLayerA", "CollisionLayerB");
 		break;
 		case Stage_Gamejam:
+		case Stage_Training:
 			tile_data_set("", TileCount, "CollisionLayerA", "CollisionLayerB");
 		break;
 		default:
