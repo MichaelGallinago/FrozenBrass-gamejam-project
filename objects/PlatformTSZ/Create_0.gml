@@ -6,3 +6,5 @@
 	
 	// Setup this object
 	object_set_solidbox(32, 10, false);
+	
+	animation_play(sprite_index, 4, 0);

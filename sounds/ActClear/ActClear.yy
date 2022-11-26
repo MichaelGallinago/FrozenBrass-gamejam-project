@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "ActClear.ogg",
-  "duration": 6.161875,
+  "soundFile": "ActClear.mp3",
+  "duration": 2.481633,
   "parent": {
     "name": "BGM",
     "path": "folders/Audio/BGM.yy",

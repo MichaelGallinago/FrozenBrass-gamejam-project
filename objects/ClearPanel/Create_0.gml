@@ -17,19 +17,19 @@
 		case CharSonic:
 		{
 			SpriteData[0] = spr_obj_clearpanel_start_st;
-			SpriteData[1] = spr_obj_clearpanel_end_s;
+			SpriteData[1] = spr_obj_clearpanel_start_st;
 		}
 		break;
 		case CharTails:
 		{
 			SpriteData[0] = spr_obj_clearpanel_start_st;
-			SpriteData[1] = spr_obj_clearpanel_end_t;
+			SpriteData[1] = spr_obj_clearpanel_start_st;
 		}
 		break;
 		case CharKnuckles:
 		{
-			SpriteData[0] = spr_obj_clearpanel_start_k;
-			SpriteData[1] = spr_obj_clearpanel_end_k;
+			SpriteData[0] = spr_obj_clearpanel_start_st;
+			SpriteData[1] = spr_obj_clearpanel_start_st;
 		}
 		break;
 	}

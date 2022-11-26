@@ -11,6 +11,8 @@
 	{
 		case Stage_TSZ:
 			SpriteData = [spr_obj_bridge_log_tsz, spr_obj_bridge_post_tsz];
+		case Stage_Gamejam:
+			SpriteData = [spr_obj_bridge_log_tsz, spr_obj_bridge_post_tsz];
 		break;
 		default:
 			SpriteData = [spr_controller_object, spr_controller_object];

@@ -78,7 +78,7 @@
 					global.SpecialRingList = [];
 					global.StarPostData	   = [];
 				
-					room_goto(Screen_DevMenu);
+					room_goto(Screen_Menu);
 				}
 			}
 		}
@@ -368,7 +368,7 @@
 							if !audio_sfx_is_playing(sfxScoreTally)
 							{
 								global.Continues++;
-								audio_sfx_play(sfxContinue, false);
+								//audio_sfx_play(sfxContinue, false);
 						
 								// Increment timer
 								ResultsValue[0] = 0;

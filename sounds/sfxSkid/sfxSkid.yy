@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfxSkid.wav",
-  "duration": 0.467891,
+  "soundFile": "sfxSkid.mp3",
+  "duration": 0.626939,
   "parent": {
     "name": "SFX",
     "path": "folders/Audio/SFX.yy",

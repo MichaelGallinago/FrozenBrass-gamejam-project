@@ -9,6 +9,7 @@
 	switch room
 	{
 		case Stage_TSZ:
+		case Stage_Gamejam:
 		{
 			var Solidbox = [24, 8];
 			SpriteData   = [spr_obj_swing_tsz_platform, spr_obj_swing_tsz_chain, spr_obj_swing_tsz_pendulum];

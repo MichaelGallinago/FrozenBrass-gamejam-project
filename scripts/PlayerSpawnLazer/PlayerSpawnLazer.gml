@@ -18,14 +18,14 @@ function PlayerSpawnLazer()
 				break;
 			}
 			var Dir = (Facing ? 0 : 180) + VisualAngle + AirAnge;  
-			with instance_create(PosX + Facing * 4, PosY-14, LazerBlast)
+			with instance_create(PosX + Facing * 5, PosY - 12, LazerBlast)
 			{
 				depth = other.depth - 1;
 				image_angle = other.VisualAngle + AirAnge;
 				image_xscale = other.Facing;
 				direction = Dir;
 			}
-			with instance_create(PosX + Facing * 8, PosY-14, Lazer)
+			with instance_create(PosX + Facing * 9, PosY - 12, Lazer)
 			{
 				depth = other.depth - 1;
 				image_angle = other.VisualAngle + AirAnge;

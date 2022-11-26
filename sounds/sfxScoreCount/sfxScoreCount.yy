@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfxScoreCount.wav",
-  "duration": 0.033311,
+  "soundFile": "sfxScoreCount.mp3",
+  "duration": 0.365714,
   "parent": {
     "name": "SFX",
     "path": "folders/Audio/SFX.yy",

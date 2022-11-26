@@ -8,6 +8,10 @@
 	if (RoomTimer div 30 % 2)
 	{
 		draw_set_colour(OrangeColour);
-		draw_text(CentreX, CentreY, "PRESS ANY BUTTON");
+		draw_text(CentreX, CentreY, "START GAME");
+		draw_text(CentreX, CentreY + 16, "TRAINING");
+		draw_text(CentreX, CentreY + 32, "SOUND VOLUME:");
+		draw_text(CentreX, CentreY + 48, "SOUND VOLUME:");
+		draw_text(CentreX, CentreY + 64, "EXIT");
 		draw_set_colour(c_white);
 	}

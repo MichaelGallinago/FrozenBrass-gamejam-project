@@ -11,4 +11,4 @@
 	
 	// Set object properties
 	object_set_unload(FlagPause);
-	object_set_triggerbox(-32, 32, -12, 12);
+	object_set_triggerbox(-32, 32, -16, 16);

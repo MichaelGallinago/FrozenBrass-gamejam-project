@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfxSpring.wav",
-  "duration": 0.944218,
+  "soundFile": "sfxSpring.mp3",
+  "duration": 1.752,
   "parent": {
     "name": "SFX",
     "path": "folders/Audio/SFX.yy",
