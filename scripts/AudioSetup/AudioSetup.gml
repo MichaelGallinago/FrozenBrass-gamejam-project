@@ -13,8 +13,8 @@ function AudioSetup()
 	audio_bgm_setloop(Invincibility, 3.7,   15.48);
 	
 	audio_bgm_setloop(MenuTheme, 0, 49);
-	audio_bgm_setloop(SnowShow, 0, 230.00);
-	audio_bgm_setloop(SnowShowBoss, 0, 250.00);
+	audio_bgm_setloop(SnowShow, 0, 230);
+	audio_bgm_setloop(SnowShowBoss, 0, 250);
 	
 	/* The game will refer to data stored here to play an additional channel. 
 	If no data set here for the track, nothing will happen. You are not forced to do this */

@@ -8,7 +8,7 @@ function GameSetup()
 	global.ShowSplash      = true;
 	global.Width           = 400;
 	global.Height		   = 224;
-	global.ScreenBuffer    = 8;
+	global.ScreenBuffer    = 0;
 	global.KeyboardControl = [vk_up, vk_down, vk_left, vk_right, ord("Z"), ord("X"), ord("C"), vk_space, vk_enter];
 	
 	/* Default (first-time-load) volume, screen size and fullscreen mode 

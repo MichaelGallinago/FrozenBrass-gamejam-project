@@ -20,7 +20,7 @@
 			'true' once you want your stage to exit boss state! */
 			switch room
 			{
-				default:
+				default: instance_create(x, y - global.Height / 2, RoboBoss);
 			}
 			Stage.IsBossfight = true;
 		}

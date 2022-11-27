@@ -44,27 +44,20 @@ function BackgroundSetup()
 			background_colour_set($244800);
 		}
 		break;
+		case Stage_Gamejam:
 		case Screen_Menu:
 		{
-			background_layer_add(0, tex_menu_bg00);
-			background_layer_add(1, tex_menu_bg00);
-			background_layer_add(2, tex_menu_bg00);
-			background_layer_add(3, tex_menu_bg00);
-			background_layer_add(4, tex_menu_bg00);
-			background_layer_add(5, tex_menu_bg00);
-			background_layer_add(6, tex_menu_bg00);
+			background_layer_add(0, tex_ssz_bg00);
+			background_layer_add(1, tex_ssz_bg01);
+			background_layer_add(2, tex_ssz_bg02);
 			
 			var FactorY = (216 - global.Height / 2) / (1440 - global.Height / 2);
 			
-			background_layer_setup(0,  0,   0, 32,   0, 0.02, FactorY, 0.1, 0, 0, false);
-			background_layer_setup(1,  0,   32, 32,  0, 0.07, FactorY, 0.14, 0, 0, false);
-			background_layer_setup(2,  0,   64, 16,  0, 0.12, FactorY, 0.18, 0, 0, false);
-			background_layer_setup(3,  0,   80, 32,  0, 0.19, FactorY, 0.22, 0, 0, false);
-			background_layer_setup(4,  0,   112, 32, 0, 0.02, FactorY, 0.26, 0, 0, false);
-			background_layer_setup(5,  0,   144, 40, 0, 0.07, FactorY, 0, 0, 0, false);
-			background_layer_setup(6,  0,   184, 40, 0, 0.12, FactorY, 0, 0, 0, false);
+			background_layer_setup(0, 0, 0, 224, 0, 0.02, FactorY, 0.1,  0, 0, false);
+			background_layer_setup(1, 0, 0, 224, 0, 0.07, FactorY, 0.14, 0, 0, false);
+			background_layer_setup(2, 0, 0, 300, 0, 0.12, FactorY, 0.18, 0, 0, false);
 			
-			// Set colourzzz
+			// Set colour
 			background_colour_set($244800);
 		}
 		break;
