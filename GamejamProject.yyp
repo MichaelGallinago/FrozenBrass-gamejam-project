@@ -481,6 +481,7 @@
     {"id":{"name":"Lazer","path":"objects/Lazer/Lazer.yy",},"order":37,},
     {"id":{"name":"tile_ignore_h","path":"scripts/tile_ignore_h/tile_ignore_h.yy",},"order":87,},
     {"id":{"name":"spr_sonic_dropdash","path":"sprites/spr_sonic_dropdash/spr_sonic_dropdash.yy",},"order":80,},
+    {"id":{"name":"spr_obj_drone","path":"sprites/spr_obj_drone/spr_obj_drone.yy",},"order":101,},
     {"id":{"name":"spr_supersonic_death","path":"sprites/spr_supersonic_death/spr_supersonic_death.yy",},"order":65,},
     {"id":{"name":"spr_sonic_idle","path":"sprites/spr_sonic_idle/spr_sonic_idle.yy",},"order":26,},
     {"id":{"name":"BarrierSparkle","path":"objects/BarrierSparkle/BarrierSparkle.yy",},"order":19,},
