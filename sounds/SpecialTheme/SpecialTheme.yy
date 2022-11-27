@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "SpecialTheme.ogg",
-  "duration": 51.74,
+  "duration": 0.0,
   "parent": {
     "name": "BGM",
     "path": "folders/Audio/BGM.yy",

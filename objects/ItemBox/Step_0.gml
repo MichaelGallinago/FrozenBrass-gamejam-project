@@ -132,7 +132,8 @@
 				{
 					audio_sfx_play(sfxSpark, false);
 					
-					Player.Rings += 10;		
+					Player.Rings += 10;	
+					Player.MethalHealth = min(100, Player.MethalHealth + 10);
 				}
 				break;
 				case "High Speed":

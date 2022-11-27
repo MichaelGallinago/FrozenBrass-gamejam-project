@@ -4,7 +4,7 @@ function GameSetup()
 	// Game settings
 	global.WindowTitle     = "Orbinaut Framework";
 	global.StartRoom	   = Screen_Gamejam;
-	global.DevMode         = true;
+	global.DevMode         = false;
 	global.ShowSplash      = true;
 	global.Width           = 400;
 	global.Height		   = 224;

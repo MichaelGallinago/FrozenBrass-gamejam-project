@@ -1,7 +1,7 @@
 /// @description Add description here
 function PlayerSpawnLazer()
 {
-	if Death return;
+	if Death || MethalHealth <= 0 return;
 	if !(--LazerReload)
 	{
 		if (Input.Mode)

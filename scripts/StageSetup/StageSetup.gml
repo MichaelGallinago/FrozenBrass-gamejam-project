@@ -52,7 +52,7 @@ function StageSetup()
 			AnimalSet	     = noone;		// Array: [animalsprite1, animalsprite2...]
 			BottomBoundary	 = room_height;
 			
-			NextStage	 = Screen_Menu;
+			NextStage	 = Screen_Credits;
 			SaveProgress = false;
 			IsFinalStage = false;				
 		}

@@ -5,7 +5,7 @@
 	draw_set_font(Font.FontDefault);
 	draw_set_halign(fa_center);
 	audio_bgm_play(AudioPrimary, MenuTheme);
-	fade_perform(ModeFrom, BlendWhite, 0.25);
+	fade_perform(ModeFrom, BlendBlack, 0.25);
 	
 	Text = [
 		"TEAM LEADER - MICHAEL GALLINAGO",
