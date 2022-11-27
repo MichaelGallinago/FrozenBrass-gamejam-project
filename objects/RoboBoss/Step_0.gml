@@ -9,7 +9,7 @@
 			audio_sfx_play(sfxDestroy, false);
 			HP -= 1;
 			InvincibilityTime = 60;
-			Xsp = (abs(Xsp) + 1) * sign(Xsp);
+			Xsp += sign(Xsp) * 0.75;
 			JumpReset -= 20;
 		}
 		
@@ -32,9 +32,18 @@
 		var FindFloor = tile_find_v(PosX, PosY + 15, true, LayerA)[0];
 		if  FindFloor < 0
 		{
-			if !Xsp Xsp = 0.5;
+			if (Xsp == 0) Xsp = 0.5;
 			PosY += FindFloor;
 			Ysp  = 0;
+		}
+		
+		if Ysp == 0
+		{
+			animation_play(spr_obj_roboboss_walk, 40 - abs(Xsp), 0);
+		}
+		else
+		{
+			animation_set(spr_obj_roboboss_jump, Ysp > 0 ? 1 : 0);
 		}
 		
 		if x < BossTrigger.x - BossTrigger.ArenaWidth / 2

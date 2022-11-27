@@ -458,6 +458,7 @@
     {"id":{"name":"spr_knuckles_balance_flip","path":"sprites/spr_knuckles_balance_flip/spr_knuckles_balance_flip.yy",},"order":92,},
     {"id":{"name":"spr_obj_starpost_lamp","path":"sprites/spr_obj_starpost_lamp/spr_obj_starpost_lamp.yy",},"order":49,},
     {"id":{"name":"spr_obj_watersplash","path":"sprites/spr_obj_watersplash/spr_obj_watersplash.yy",},"order":46,},
+    {"id":{"name":"spr_obj_roboboss_jump","path":"sprites/spr_obj_roboboss_jump/spr_obj_roboboss_jump.yy",},"order":104,},
     {"id":{"name":"gui_pause_menu","path":"sprites/gui_pause_menu/gui_pause_menu.yy",},"order":13,},
     {"id":{"name":"gui_results_act","path":"sprites/gui_results_act/gui_results_act.yy",},"order":4,},
     {"id":{"name":"tex_continue_stars","path":"sprites/tex_continue_stars/tex_continue_stars.yy",},"order":1,},
@@ -571,6 +572,7 @@
     {"id":{"name":"StartupScreen","path":"objects/StartupScreen/StartupScreen.yy",},"order":0,},
     {"id":{"name":"ContinueCharacter","path":"objects/ContinueCharacter/ContinueCharacter.yy",},"order":3,},
     {"id":{"name":"spr_obj_swing_tsz_chain","path":"sprites/spr_obj_swing_tsz_chain/spr_obj_swing_tsz_chain.yy",},"order":77,},
+    {"id":{"name":"spr_obj_roboboss_walk","path":"sprites/spr_obj_roboboss_walk/spr_obj_roboboss_walk.yy",},"order":103,},
     {"id":{"name":"gui_framework_splash","path":"sprites/gui_framework_splash/gui_framework_splash.yy",},"order":14,},
   ],
   "Options": [
